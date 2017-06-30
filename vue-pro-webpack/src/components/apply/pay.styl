@@ -1,0 +1,141 @@
+
+     	 $shadow=0px 16px 16px rgb(229,223,255,0.1);
+     bg($url)
+        background url($url + "@2x.png") no-repeat center/cover
+        @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio:3)
+          background url($url + "@3x.png") no-repeat center/cover;
+    .pay{
+       font-family: 'MicroSoft YaHei'
+       header a{
+                color: white !important;
+            }
+		header a i{
+            font: 700 16px/34px simsun
+            }
+        .mint-header{
+                background: black;
+                position: fixed;
+                top: 0;
+                left:0;
+                width: 100%;
+                z-index: 13;
+            }
+            .main{
+                padding 40px  10px 0;
+                .top{
+                    line-height 0.6rem;
+                    height 0.6rem;
+                    background:#fffbd9;
+                    box-shadow :$shadow;
+                    border-bottom-right-radius:0.2rem;
+                    border-bottom-left-radius:0.2rem;
+                    // border-radius: 0.3rem;
+                    padding-left: 0.3rem;
+                    i{
+                        display: inline-block;
+                        width: 0.3rem;
+                        height: 0.3rem;
+                        vertical-align middle;
+                        bg('../../assets/img/shijian') ;
+                        margin-right 0.1rem;
+                    }
+                    span{
+                        font-size 11px;
+                        s{
+                         text-decoration none; 
+                         color:#fa870c;       
+                            }
+                    }
+                }
+                .indent{
+                    border-radius 0.3rem;
+                    margin-top: 0.2rem;
+                    overflow: hidden;
+                    box-shadow:$shadow;
+                    div{
+                        display:flex;
+                        justify-content: space-between;
+                        height:1.4rem;
+                        background: white;
+                        margin-bottom 0.02rem;
+                        padding: 0 0.15rem 0;
+                        span{
+                            font-size 13px;
+                            line-height: 1.4rem;
+                        }
+                        span:nth-child(2){
+                            font-size 14px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .chose{
+                    margin-top: 0.1rem;
+                    box-shadow: $shadow;
+                    border-radius 0.3rem;
+                    overflow: hidden;
+                    div:nth-child(2){
+                        i{
+                            bg('../../assets/img/alipay');
+                            width .64rem
+                            margin-right 0.1rem;
+                         }
+                        }
+                    div{
+                        height:1.4rem;
+                        line-height: 1.4rem;
+                        background: white;
+                        margin-bottom 0.02rem;
+                        padding: 0 0.15rem 0;
+                        span{
+                            font-size 13px;
+                        }
+                        span:nth-child(2){
+                            font-size 14px
+                        }
+                        i{
+                            display: inline-block;
+                            width 0.58rem;
+                            height 0.5rem;
+                            vertical-align: middle;
+                            bg('../../assets/img/wechat');
+                            margin-right 0.19rem;
+                        }
+                        s{
+                            // line-height: 1.4rem;
+                            width 0.3rem;
+                            height 0.3rem;
+                            float: right;
+                            margin-top: 0.54rem;
+                            border-radius: 50%;  
+                            }
+                        .check{
+                            bg('../../assets/img/zhifuchenggong');
+                        }
+                        .uncheck{
+                            border 1px solid #9b9b9b;
+                        }
+                    }
+                    .second{
+                        i{
+                            bg('../../assets/img/alipay')    
+                            }
+                        
+                    }
+                }
+                .affirm{
+                    margin-top: 1rem;
+                    height 1.4rem;
+                    border-radius: 0.2rem;
+                    
+                    text-align: center;
+                    background: linear-gradient(-90deg,#35b05d, #41cc6e);
+                    a{
+                        display: block;
+                        color: white;
+                        line-height: 1.4rem;
+                     }
+                }
+            }
+       }
+     

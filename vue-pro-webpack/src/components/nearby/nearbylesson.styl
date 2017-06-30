@@ -1,0 +1,146 @@
+bg-image($url)
+    background url($url + "@2x.png") no-repeat center/cover
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio:3)
+        background url($url + "@3x.png") no-repeat center/cover
+.nearbylesson{
+    .nearby-nav{
+        display: flex;       
+        width 100%
+        height 0.8rem
+        background-color: #fff;
+        li{
+            flex: 1;
+            text-align: center;
+            padding: 0 0.8rem
+            a{
+                display: block;
+                position: relative;
+                height 0.78rem
+                line-height: 0.78rem
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#41cc6e), to(#35b05d));
+                font-size: 15px;
+                span{
+                    display: block;
+                    width 100%
+                    height 100%
+                    line-height: 0.78rem
+                }
+            }
+            .router-link-active span::before{
+                content:'';
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: linear-gradient( 90deg,#41cc6e, #35b05d)
+            }
+            .router-link-active .sp1::before{
+                 content:'';
+                 height: 0;
+            }
+        }        
+    }
+    .listbox{
+        padding: 0 0.1rem;
+        .lessonlist{
+            border-radius: 0.2rem;
+            background: #fff;
+            margin-top: 0.1rem;
+            overflow: hidden;
+            li{
+                width 100%
+                height 2.3rem
+                padding: 0.35rem 0.2rem;
+                border-bottom: 1px solid #ccc;
+                a{  
+                    display: block;
+                    display: flex;
+                    .headpic{
+                        float: left;
+                        height:1.6rem;
+                        flex:0 0 2.2rem;
+                        margin-right:0.2rem;
+                        border: 1px solid #dbdbdb;
+                    }
+                    .msg{
+                        flex: 1;
+                        .nearby-list-title{
+                            width: 3.6rem;
+                            margin-bottom 0.14rem
+                            font-size: 13px;
+                            font-weight: 900;
+                            color: #3b3b3b;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            span{
+                                font-size: 15px;
+                                font-weight: 900;
+                                color: #3b3b3b;
+                            }
+                        }
+                        .star{
+                            line-height 0.16rem
+                            .common-star{
+                                height 0.32rem
+                                .star-item{
+                                    margin-top: 4px;
+                                }
+                            }
+                            span{
+
+                                font-size: 11px;
+                                color: #525252;
+                                b{
+                                    font-weight: normal
+                                    margin: 0 0.1rem;
+                                }
+                            }
+                        }
+                        .tag{
+                            height 0.34rem
+                            line-height: 0.34rem
+                            margin-bottom 0.2rem
+                            i{
+                                display: inline-block
+                                margin-right: 0.06rem
+                                margin-bottom: 0.56rem;
+                                padding: 0 0.1rem;
+                                height 0.34rem
+                                line-height: 0.34rem
+                                border-radius: 0.17rem
+                                font-size: 10px;
+                                font-style: normal;
+                                text-align: center;
+                            }
+                            .tag1{                        
+                                color: #e5338f
+                                border: 1px solid #e5338f
+                            }
+                            .tag2{                         
+                                color: #e5a033
+                                border: 1px solid #e5a033
+                            }
+                            .tag3{                         
+                                color: #48a8f9
+                                border: 1px solid #48a8f9
+                            }
+                            .tag4{                        
+                                color: #9f4df3
+                                border: 1px solid #9f4df3
+                            }
+                        }
+                        .distance{
+                            font-size: 11px;
+                            line-height: 0.22rem;
+                            color: #525252;
+                        }
+                    }
+                }          
+            }
+        }
+    }
+}

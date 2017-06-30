@@ -1,0 +1,162 @@
+bg-image($url)
+    background url($url + "@2x.png") no-repeat center/cover
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio:3)
+        background url($url + "@3x.png") no-repeat center/cover
+.nearby{
+    .nearby-title{
+        position: fixed;
+        width 100%
+        top 0
+    }
+    .nearby-nav{
+        display: flex;
+        position: fixed;
+        top 41px      
+        width 100%
+        height 0.8rem
+        background-color: #fff;
+        li{
+            flex: 1;
+            text-align: center;
+            line-height: 0.8rem;
+            padding: 0 0.8rem;
+            a{
+                display: block;
+                position: relative;
+                height 0.78rem
+                line-height: 0.78rem
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#41cc6e), to(#35b05d));
+                font-size: 15px;
+                span{
+                    display: block;
+                    width 100%
+                    height 100%
+                    line-height: 0.78rem
+                }
+            }
+            .router-link-active span::before{
+                content:'';
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: linear-gradient( 90deg,#41cc6e, #35b05d)
+            }
+        }        
+    }
+    .map{
+        position: fixed;
+        top 82px;
+        width 100%
+        height 4.04rem
+        background-color: red;
+    }
+    .nearby-list{
+        border-radius: 20px;
+        background: #fff;
+        position: relative;
+        margin-top: 190px;
+        overflow: hidden;
+        .line{
+            display: inline-block;
+            position: absolute;
+            top 0.2rem
+            left 50%
+            margin-left: -0.2rem;
+            width 0.4rem
+            height 0.08rem
+            border-radius: 0.04rem;
+            background-color: #eee;
+        }
+        li{
+            margin-top: 0.62rem;
+            border-bottom: 1px solid #ccc;
+            a{  
+                display: block;
+                display: flex;
+                .headpic{
+                    display: inline-block;
+                    height 1.1rem
+                    flex: 0 0 1.1rem;
+                    margin: 0 0.2rem;
+                    border-radius: 50%;
+                    border: 1px solid #dbdbdb;
+                }
+                .msg{
+                    flex: 1;
+                    .nearby-list-title{
+                        margin-bottom 0.16rem
+                        .icon{
+                            display: inline-block;
+                            width 0.58rem
+                            height 0.32rem
+                            margin-right: 0.1rem;
+                            background-size: 0.58rem 0.32rem;
+                            bg-image("../../assets/img/renzheng-icon")
+                            vertical-align: middle;
+                        }
+                        span{
+                            font-size: 15px;
+                            font-weight: 900;
+                            color: #3b3b3b;
+                        }
+                    }
+                    .star{
+                        margin-bottom: 0.26rem;
+                        line-height: 0.48rem
+                        span{
+                            font-size: 13px;
+                            color: #525252;
+                            b{
+                                font-weight: normal
+                                margin: 0 0.1rem;
+                            }
+                        }
+                    }
+                    .tag{   
+                        i{
+                            display: inline-block
+                            margin-right: 0.06rem
+                            line-height 0.34rem
+                            margin-bottom: 0.56rem;
+                            font-size: 10px;
+                            font-style: normal;
+                            text-align: center;  
+                        }
+                        .tag1{                        
+                            width 1.06rem
+                            height 0.34rem
+                            border-radius: 0.17rem
+                            color: #e5338f
+                            border: 1px solid #e5338f
+                        }
+                        .tag2{                        
+                            width 0.86rem
+                            height 0.34rem
+                            border-radius: 0.17rem
+                            color: #e5a033
+                            border: 1px solid #e5a033
+                        }
+                        .tag3{                        
+                            width 1.26rem
+                            height 0.34rem
+                            border-radius: 0.17rem
+                            color: #48a8f9
+                            border: 1px solid #48a8f9
+                        }
+                        .tag4{                        
+                            width 0.86rem
+                            height 0.34rem
+                            border-radius: 0.17rem
+                            color: #9f4df3
+                            border: 1px solid #9f4df3
+                        }
+                    }
+                }
+            }          
+        }
+    }
+}

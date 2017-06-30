@@ -1,0 +1,111 @@
+
+    $shadow=0px 16px 16px rgb(229,223,255,0.1);
+    bg($url)
+        background url($url + "@2x.png") no-repeat center/cover
+        @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio:3)
+          background url($url + "@3x.png") no-repeat center/cover;
+    .result{
+       font-family: 'MicroSoft YaHei';
+       margin: 1.4rem 0.6rem 0 0.6rem;
+       color: #525252;
+       header a{
+                color: white !important;
+            }
+		header a i{
+            font: 700 16px/34px simsun
+            }
+        .mint-header{
+                background: black;
+                position: fixed;
+                top: 0;
+                left:0;
+                width: 100%;
+                z-index: 13;
+            }
+            .main{
+                .success{
+                     box-shadow: $shadow;
+                     overflow: hidden;
+                     border-radius: 0.2rem;
+                    
+                    div{
+                        margin-top: 0.02rem;
+                        background: white;
+                     }
+                    div:nth-child(1){
+                        text-align center;
+                        margin: 0;
+                        i{
+                            display: inline-block;
+                            width 1.48rem;
+                            height 1.48rem;
+                            bg('../../assets/img/zhifuchenggong');
+                            border-radius: 50%;
+                            box-shadow: $shadow;
+                            margin: 0.6rem 0 0.4rem 0;
+                         }
+                         p{
+                            font-size: 15px;
+                            font-weight bold;
+                            color: #3b3b3b;
+                            padding-bottom 0.52rem;
+                          }
+                    }
+                    div:nth-child(2),
+                    div:nth-child(3){
+                        height 1rem;
+                        
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 0.3rem;
+                        span:nth-child(1){
+                            font-size: 13px;
+                            line-height 1rem;
+                        }
+                        span:nth-child(2){
+                            font-size: 15px;
+                            color: #3b3b3b;
+                            font-weight: bold;
+                            line-height 1rem;
+                        }
+                    }
+                    div:nth-child(4){
+                        height 2.8rem;
+                        text-align: center;
+                        padding-top: 0.4rem;
+                        s{
+                            width 2rem;
+                            height 2rem;
+                            display: inline-block;
+                            bg('../../assets/img/qcode');
+                            border 3px solid #4aceff
+                         }
+                    }
+                    div:nth-child(5){
+                        text-align center;
+                        height 0.8rem;
+                        
+                        font-size: 11px;
+                        p{
+                            line-height 0.8rem;
+                         }
+                    }
+                }
+                .check{
+                    margin-top: 0.1rem;
+                    height 1.1rem;
+                    line-height: 1.1rem;
+                    border-radius: 0.2rem;
+                    text-align: center;
+                    box-shadow: $shadow;                    
+                    background: white;
+                    a{
+                         background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#41cc6e), to(#35b05d));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color:transparent;
+                        font-weight: bold;
+                     }
+                }
+            }
+       }
+     

@@ -1,0 +1,287 @@
+bg($url)
+    background url($url + "@2x.png")  no-repeat center/cover
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio:3)
+        background url($url + "@3x.png")  no-repeat center/cover
+html,body{
+    height 100%-0.56rem;
+    background: white !important;
+}
+#search{
+    margin-top: 0.8rem;
+    background: white;
+    .devide{
+        background: #f1f3ff
+    }
+    header a{
+         color: white !important;
+        }
+	header a i{
+        font: 700 16px/40px simsun;
+         }
+    .mint-header{
+            background: black;
+            position: fixed;
+            top: 0;
+            left:0;
+            width: 100%;
+            z-index: 13;
+            height 0.8rem
+            }
+    .import{
+        height 1rem
+        position: fixed;
+        top: 0.8rem;
+        width 100%
+        padding: 0.16rem 0.2rem 0;
+        background: #f1f3ff
+        i{
+            position: absolute;
+            height 0.32rem
+            width 0.32rem
+            left: 0.6rem
+            top:0.34rem
+            bg('../../assets/img/search')
+          }
+         .w100{
+            width 100%
+         }
+         .w47{
+            width 4.7rem            
+         }
+        input{
+            height 0.68rem
+            outline: none;
+            padding-left 0.86rem;
+            border 1px solid #d3d7f2;
+            border-radius: 0.43rem;
+            font-size: 13px;
+         }
+         span{
+            font-size: 15px;
+            float right;
+            margin: 0 .34rem;
+            line-height: .7rem;
+            display: none
+            
+          }
+         input::-webkit-input-placeholder{
+            color: #d3d3d3;
+          }
+        //   input::-webkit-input-placeholder {
+        // 　　  color:#999;
+        // 　   }
+     }
+     .search{
+         margin-top: 1.8rem;
+         .devide{
+                height 0.02rem
+            }
+         .hot,.history{
+            background: white;
+            padding:0.5rem 0.4rem 0.54rem;
+            h4{
+                font-size: 15px;
+                color: #35b05d;
+                margin-bottom:0.1rem;
+             }
+             span{
+                height 0.56rem
+                line-height 0.56rem
+                display: inline-block;
+                padding: 0 0.36rem;
+                margin-top: 0.3rem;
+                font-size 13px;
+                border 1px solid #dfdfdf;
+                border-radius: 0.28rem;
+                margin-right 0.1rem;
+              }
+        }
+     }
+        .result{
+            display: none;
+            margin-top: 1.8rem;
+            color: #525252;
+            .devide{
+                height 0.1rem
+            }
+            .lesson{
+                padding-top: 0.5rem;
+                >h4{
+                    padding: 0 0.2rem;
+                }
+                .devide{
+                    height 0.02rem
+                }
+                h4{
+                    font-size: 15px;
+                    color: #35b05d;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                 }
+                 a{
+                    font-size: 11px;
+                    color: #525252;
+                    padding: 0 0.2rem;
+                    height 1rem;
+                    line-height 1rem
+                  }
+                 .item{
+                       margin: 0.4rem 0;
+                        padding: 0 0.2rem;
+                       
+                     i{
+                        display: inline-block;
+                        width 2.2rem
+                        height 1.6rem
+                        float:left;
+                        overflow: hidden;
+                        margin-right:0.2rem
+                        background: url(../../assets/img/list_2.jpg) no-repeat center/cover
+                      }
+                      .right{
+                          overflow: hidden;
+                          >div{
+                              margin-top: -0.02rem
+                          }
+                          s{
+                            text-decoration: none;
+                            display: inline-block;
+                            height 0.34rem
+                            line-height 0.3rem
+                            font-size: 10px;
+                            border-radius: 0.17rem;
+                            padding: 0 0.12rem;
+                            margin-top: 0.1rem;
+                            margin-right 0.1rem;
+                           }
+                           s:nth-child(1){
+                               border 1px solid skyblue;
+                               color: skyblue;
+                           }
+                           s:nth-child(2){
+                            color: orange;
+                            border 1px solid orange;
+                            
+                           }
+                          h4{
+                            font-size: 13px;
+                            color: #3b3b3b;
+                            font-weight: bold;
+                           }
+                           .common-star{
+                               vertical-align: middle;                               
+                           }
+                           .sp2,p{
+                               font-size: 11px;
+                               color: #525252;
+                               vertical-align: middle;
+                            }
+                            p{
+                                margin-top: 0.1rem;
+                             }
+                      }
+                 }
+            }
+            .program{
+                
+                .item{
+                    margin-bottom: 0.8rem;
+                    i{
+                        width 1.3rem
+                        height 1.3rem
+                     }
+                     i:nth-child(1){
+                         background: url('../../assets/img/touxiang_01.png') no-repeat center/cover
+                         border 1px solid #d3d3d3
+                     }
+                    .right{
+                        .icon{
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 0.58rem;
+                            height: 0.32rem;
+                            bg('../../assets/img/renzheng-icon')
+                            margin-right 0.1rem
+                        }
+                        h4{
+                            display: inline-block;
+                            vertical-align middle
+                            padding-bottom 0.02rem
+                        }
+                        div:nth-child(2){
+                            div{
+                                // margin-top: 0.2rem
+                             }
+                        }
+                         .label1{
+                            s:nth-child(1){
+                                border 1px solid hotpink;
+                                color: hotpink
+                         }
+                            s:nth-child(2){
+
+                         }
+                      }
+                         .label2{
+                             padding-bottom 0.02rem;
+                            s:nth-child(1){
+                                border 1px solid hotpink;
+                                color: hotpink
+                         }
+                            s:nth-child(2){
+
+                         }
+                             s:nth-child(3){
+                            border 1px solid skyblue;
+                            color: skyblue;
+                         }
+                            s:nth-child(4){
+                            border 1px solid purple;
+                            color: purple;
+                         }
+                      }
+                    }
+                }
+            }
+            .tool{
+                // padding-bottom 1rem
+                >h4{
+                    // margin-top: 0.5rem;
+                }
+                .item{
+                    i{
+                        display: inline-block;
+                        height 1.3rem
+                        width 1.3rem 
+                        background: url(../../assets/img/logo_1.png)  no-repeat center/cover   
+                     }
+                    .right{
+                        position: relative;
+                        .enter{
+                            height 0.5rem
+                            position: absolute;
+                            right: 0;
+                            top 0;
+                            font-size: 14px
+                            color: #35b05d;
+                            line-height 0.5rem
+                            padding: 0 0.4rem;
+                            border 1px solid #35b05d;
+                            border-radius 0.3rem;
+                        }
+                        >div{
+                            font-size: 12px;
+                            margin-top: 0.1rem;
+                        }
+                       
+                    }
+                }
+                .bot_devide{
+                height:2rem;
+             }
+            }
+            
+        }
+        
+}

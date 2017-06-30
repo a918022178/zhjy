@@ -1,0 +1,79 @@
+bg-image($url)
+    background url($url + "@2x.png") no-repeat center/cover
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio:3)
+        background url($url + "@3x.png") no-repeat center/cover
+.divide{
+	height: 0.1rem;
+}
+.list{
+	background: white;
+	height: 100%;
+	padding: 0.72rem 0.4rem 1.2rem 0.2rem;
+	.pic{
+		width: 1.3rem;
+		float: left;
+		overflow: hidden;
+	}
+	s{
+		display: block;
+		height: 1.3rem;
+		background:  url('../../assets/img/touxiang_01.png') round;
+		border: 1px solid #dbdbdb;
+		border-radius: 50%;
+	}
+	.word{
+		overflow: hidden;
+		padding: 0.16rem 0 0 0.4rem;
+		h4{
+			font-size: 15px;
+			color: #3b3b3b;
+			font-weight: 700;
+		}
+		span{
+			font-size: 13px;
+			color: #525252;
+		}
+		p{
+			font-size: 12px;
+			margin-top: 0.3rem;
+			color: #525252;
+			margin-bottom 0.3rem;
+		}
+		.star{
+			margin-top: 0.12rem;
+			a{
+				font-size: 13px;
+			}
+			div{
+				overflow:hidden;
+			}
+			span{
+				// float:left;
+				vertical-align middle
+			}
+		}
+		.common-star {
+			vertical-align: middle;
+			.star-item{
+				display: inline-block;
+				width: 0.32rem;
+				height: 0.32rem;
+				margin-right: 0.06rem;
+				vertical-align: middle;
+				bg-image('../../assets/img/icon_star_sel')
+			}
+		}
+		i:nth-child(5){
+			bg-image('../../assets/img/icon_star_nor')
+		}
+		a{
+			color:#2e8ae8;
+			font-size 13px;
+			text-decoration none;
+		}
+	}	
+}
+
+ 
+
+ 

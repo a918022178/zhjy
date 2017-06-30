@@ -1,0 +1,160 @@
+bg($url)
+    background url($url + "@2x.png")  no-repeat center/cover
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio:3)
+        background url($url + "@3x.png")  no-repeat center/cover
+.collect{
+    color: #525252;
+    background: #f1f3ff ;
+      header{
+          a{
+           color: white !important;
+		  splay: inline-block;
+          i{
+            font: 700 16px/34px simsun
+           }
+        }
+		.router-link-active {
+			color: #007aff;
+		}	
+	}
+    .mint-header{
+			background: black;
+			position: fixed;
+			top: 0;
+			left:0;
+			width: 100%;
+			z-index: 13;
+			height: 0.8rem;
+		}
+        .mui-bar{
+			position: relative;
+			box-shadow: none;
+			background: white;
+			height: 0.8rem;
+            margin-top: 0.8rem;
+            .active span::before{
+                content:'';
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: linear-gradient( 90deg,#41cc6e, #35b05d)
+            }
+            .mui-tab-item{
+                padding: 0 0.2rem;
+                width: 50%;
+                float: left;
+                text-align: center;
+                height: 100%;
+                text-decoration: none;
+                padding: 0 1rem;
+                span{
+                    font-family: '微软雅黑';
+                        background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#41cc6e), to(#35b05d));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color:transparent;
+                    position: relative;
+                    display: block;
+                    color: #41cc6e;
+                    font-size: 16px;
+                    line-height: 0.8rem;    
+                }
+            }
+		}
+       .lesson1,.program{
+           margin-top: 0.1rem;
+           overflow: hidden;
+           .transform{
+               transform: translate(-1.2rem)
+           }
+           .item{
+               transition: all .5s;
+               padding: 0.4rem 0.2rem;
+               position: relative;
+               margin-bottom 0.02rem;
+               background: white;
+               height 2.1rem
+               i{
+                  float: left;
+                  width 1.8rem
+                  height 1.3rem
+                  overflow hidden
+                  background: url('../../assets/img/list_2.jpg') no-repeat center/cover
+                }
+                >div{
+                    overflow: hidden;
+                    padding-left 0.2rem
+                    h4{
+                        font-size: 12px;
+                        font-weight: 700;
+                     }
+                     .common-star{
+                         vertical-align: middle;
+                     }
+                     .scoe{
+                        font-size: 12px;
+                        vertical-align: middle;
+                        color: #999
+                      }
+                }
+                >span{
+                    position: absolute;
+                    height 100%
+                    width 1.2rem
+                    right: -1.2rem;
+                    top: 0;
+                    font-size: 10px;
+                    background: hotpink;
+                    color: white;
+                    text-align: center;
+                    padding-top: 0.5rem;
+                    s{
+                        display: inline-block;
+                        width 0.36rem
+                        height 0.36rem
+                        bg('../../assets/img/unlike')
+                     }
+                     span{
+                         margin-top: 0.14rem
+                         display: block;
+                      }
+                }
+           }
+           .item:nth-child(2){
+               >i{
+                   background: url('../../assets/img/list_1.jpg') no-repeat center/cover
+               }
+           }
+           .item:nth-child(3){
+               >i{
+                   background: url('../../assets/img/list_3.jpg') no-repeat center/cover
+               }
+           }
+       }
+       .program{
+           display: none;
+           margin-top: 0.1rem;
+           .item{
+               i{
+                  width 1.3rem
+                  height 1.3rem
+                  background: url('../../assets/img/touxiang_01.png') no-repeat center/cover !important
+                  border 1px solid #d3d3d3;
+                }
+                .clearfix{
+                    h4{
+                        float: left;
+                        font-size: 15px;
+                     }
+                    s{
+                        float: left;
+                        height 0.3rem
+                        width 0.3rem;
+                        bg('../../assets/img/V-renzheng');
+                        margin-left 0.1rem
+                    }
+                }
+           }
+       }
+}
